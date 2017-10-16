@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端效摘要</title>
+    <style>
+        .dome1 {
+            position: relative;
+            border: 1px solid #a4a4a4;
+            background: #dad6a5;
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+        }
+
+        .dome2 {
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            position: absolute;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #2780ff;
+            color: #ffffff;
+
+        }
+
+        .flaot-right {
+            float: right;
+        }
+
+        .main {
+            width: 400px;
+            height: 200px;
+            overflow: hidden;
+            background-color: #ccc;
+            position: absolute;
+        }
+
+        .yuan {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            position: absolute;
+        }
+
+        #left {
+            top: -50px;
+            left: -50px;
+        }
+
+        #right {
+            bottom: -50px;
+            right: -50px;
+        }
+
+        .second {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .first {
+            top: 50%;
+            left: 50%;
+            margin-left: -200px;
+            margin-top: -100px;
+        }
+        .text{
+            text-align: center;        /*文字水平居中对齐*/
+            line-height: 200px;        /*设置文字行距等于div的高度*/
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="dome1">
+    <p style="text-align: center"><strong>绝对居中方式</strong></p>
+    <p>
+        dome1为父容器，设置为position:relative，，可以使子级居中显示于父容器。
+        <strong>必须：</strong>给父容器设定高或宽度。
+
+    </p>
+    <div class="dome2">
+        .dome2 {
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #2780ff;
+        }
+        .dome2 {
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #2780ff;
+        } .dome2 {
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #2780ff;
+        } .dome2 {
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #2780ff;
+        } .dome2 {
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #2780ff;
+        } .dome2 {
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #2780ff;
+        } .dome2 {
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #2780ff;
+        }
+
+    </div>
+</div>
+<div class="main second text">
+    利用CSS3的transform，宽度不定，支持IE9+
+    <div id="left" class="yuan"></div>
+    <div id="right" class="yuan"></div>
+</div>
+
+<div class="dome1 flaot-right">
+    <div class="main first text">
+        前提是需要知道尺寸。兼容性最好。
+        <div id="left" class="yuan"></div>
+        <div id="right" class="yuan"></div>
+    </div>
+</div>
+</body>
+</html>
