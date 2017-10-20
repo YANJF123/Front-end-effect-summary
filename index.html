@@ -2,186 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>前端效摘要</title>
-    <style>
-        .dome1 {
-            position: relative;
-            border: 1px solid #a4a4a4;
-            background: #dad6a5;
-            width: 500px;
-            height: 500px;
-            display: inline-block;
-        }
-
-        .dome2 {
-            width: 50%;
-            height: 50%;
-            margin: auto;
-            position: absolute;
-            overflow: auto;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background: #2780ff;
-            color: #ffffff;
-
-        }
-
-        .flaot-right {
-            float: right;
-        }
-
-        .main {
-            width: 400px;
-            height: 200px;
-            overflow: hidden;
-            background-color: #ccc;
-            position: absolute;
-        }
-
-        .yuan {
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-            border-radius: 50%;
-            -moz-border-radius: 50%;
-            -webkit-border-radius: 50%;
-            position: absolute;
-        }
-
-        #left {
-            top: -50px;
-            left: -50px;
-        }
-
-        #right {
-            bottom: -50px;
-            right: -50px;
-        }
-
-        .second {
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .first {
-            top: 50%;
-            left: 50%;
-            margin-left: -200px;
-            margin-top: -100px;
-        }
-        .text{
-            text-align: center;        /*文字水平居中对齐*/
-            line-height: 200px;        /*设置文字行距等于div的高度*/
-            overflow:hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>个人前端效果总结</title>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<div class="dome1">
-    <p style="text-align: center"><strong>绝对居中方式</strong></p>
-    <p>
-        dome1为父容器，设置为position:relative，，可以使子级居中显示于父容器。
-        <strong>必须：</strong>给父容器设定高或宽度。
+<div class="container">
+    <!--水平垂直居中-->
+    <section class="xy-center">
+        <div class="row">
+            <div class="col">
+                <div class="out">
+                    <div class="in"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="out1">
+                    <div class="in1"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="out2">
+                    <div class="in2"></div>
+                </div>
+            </div>
+        </div>
 
-    </p>
-    <div class="dome2">
-        .dome2 {
-        width: 50%;
-        height: 50%;
-        overflow: auto;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: #2780ff;
-        }
-        .dome2 {
-        width: 50%;
-        height: 50%;
-        overflow: auto;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: #2780ff;
-        } .dome2 {
-        width: 50%;
-        height: 50%;
-        overflow: auto;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: #2780ff;
-        } .dome2 {
-        width: 50%;
-        height: 50%;
-        overflow: auto;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: #2780ff;
-        } .dome2 {
-        width: 50%;
-        height: 50%;
-        overflow: auto;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: #2780ff;
-        } .dome2 {
-        width: 50%;
-        height: 50%;
-        overflow: auto;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: #2780ff;
-        } .dome2 {
-        width: 50%;
-        height: 50%;
-        overflow: auto;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: #2780ff;
-        }
+    </section>
+    <!--遮盖背景小图-->
+    <section class="coverage">
+        <div class="row">
+            <div class="col block">
+                <div class="overlay"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolorem dolorum eligendi, et
+                    exercitationem
+                    facilis hic incidunt ipsa magni maxime molestiae nisi officiis porro reiciendis similique, sit
+                    tempore vel
+                    voluptas.</p>
+                <p>At, atque, cupiditate, enim harum iusto modi nobis possimus qui ratione recusandae totam ullam? Cum
+                    cupiditate
+                    dolorem eius eum tempore tenetur veritatis voluptate. Atque illo magnam necessitatibus nihil
+                    provident
+                    repudiandae.</p>
+            </div>
+        </div>
 
+    </section>
+    <!--遮盖背景图片-->
+    <section class="coverage1">
+
+        <div class="row">
+            <div class="col block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor dolorem
+                    ducimus earum
+                    eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod reiciendis rem
+                    repellat,
+                    sunt velit vero?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor dolorem
+                    ducimus earum
+                    eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod reiciendis rem
+                    repellat,
+                    sunt velit vero?</p>
+            </div>
+        </div>
+    </section>
+<!--scc写丝带{斜标}-->
+    <section class="ribbon1">
+    <div class="row">
+        <div class="col box">
+            <span class="ribbon">+50%</span>
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam officiis quam vel velit veritatis.</p>
+        </div>
     </div>
+
+</section>
 </div>
 
-<div class="main second text">
-    利用CSS3的transform，宽度不定，支持IE9+
-    <div id="left" class="yuan"></div>
-    <div id="right" class="yuan"></div>
-</div>
 
-<div class="dome1 flaot-right">
-    <div class="main first text">
-        前提是需要知道尺寸。兼容性最好。
-        <div id="left" class="yuan"></div>
-        <div id="right" class="yuan"></div>
-    </div>
-</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
 </body>
 </html>
