@@ -2,93 +2,360 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>个人前端效果总结</title>
     <link rel="stylesheet" href="css/app.css">
+
 </head>
-<body>
+<body data-spy="scroll" data-target=".scrollspy">
+<header>
+    <div class="head">
+        <h1>This is a personage Front-end-effect-summary </h1>
+        <p>Creating one of these isn't so bad. Let's learn how with this sweet little demo!</p>
+    </div>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
 <div class="container">
-    <!--水平垂直居中-->
-    <section class="xy-center">
-        <div class="row">
-            <div class="col">
-                <div class="out">
-                    <div class="in"></div>
+    <div class="row ">
+        <div class="col-lg-9 col-md-9">
+            <!--水平垂直居中-->
+            <section class="post xy-center">
+                <div id="xy-center">
+                    <h1> 水平垂直居中</h1>
                 </div>
-            </div>
-            <div class="col">
-                <div class="out1">
-                    <div class="in1"></div>
+                <div id="center-usage">
+                    <h2>水平垂直居中用法详情</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi assumenda, beatae cupiditate
+                        dolores earum ex incidunt ipsum labore laborum officiis omnis praesentium quis reiciendis saepe
+                        sapiente soluta veniam voluptates.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam architecto atque,
+                        blanditiis corporis delectus dignissimos dolor dolorem exercitationem fugit, hic impedit in
+                        incidunt modi obcaecati perferendis porro praesentium voluptatem!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur commodi
+                        consequatur consequuntur debitis dicta distinctio doloremque eveniet exercitationem facilis hic
+                        laborum magni necessitatibus placeat quidem saepe sapiente, veniam voluptatibus!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias culpa ex excepturi exercitationem
+                        facere id illo in ipsa, ipsam, laudantium maxime nemo officia quaerat quam quia quibusdam
+                        recusandae sed, voluptatem?</p>
                 </div>
-            </div>
-            <div class="col">
-                <div class="out2">
-                    <div class="in2"></div>
+                <div id="center-example">
+                    <h2>水平垂直居中实例</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                            <div class="out">
+                                <div class="in"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                            <div class="out1">
+                                <div class="in1"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                            <div class="out2">
+                                <div class="in2"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+            <!--遮盖背景小图-->
 
-    </section>
-    <!--遮盖背景小图-->
-    <section class="coverage">
-        <div class="row">
-            <div class="col block">
-                <div class="overlay"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolorem dolorum eligendi, et
-                    exercitationem
-                    facilis hic incidunt ipsa magni maxime molestiae nisi officiis porro reiciendis similique, sit
-                    tempore vel
-                    voluptas.</p>
-                <p>At, atque, cupiditate, enim harum iusto modi nobis possimus qui ratione recusandae totam ullam? Cum
-                    cupiditate
-                    dolorem eius eum tempore tenetur veritatis voluptate. Atque illo magnam necessitatibus nihil
-                    provident
-                    repudiandae.</p>
-            </div>
-        </div>
+            <section class="post">
+                <h1 id="coverage">遮罩层</h1>
+                <p> 前端页面偶尔使用到遮罩层，自己写了个最简的例子，</p>
+                <h2 id="min-coverage">遮盖背景小图</h2>
+                <h3>div布局</h3>
+                <div class="highlight">
+                    <xmp>
+                        <div class=" block">
+                            <div class="overlay"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolorem dolorum
+                                eligendi,
+                                et
+                                exercitationem
+                                facilis hic incidunt ipsa magni maxime molestiae nisi officiis porro reiciendis
+                                similique,
+                                sit
+                                tempore vel
+                                voluptas.</p>
+                            <p>At, atque, cupiditate, enim harum iusto modi nobis possimus qui ratione recusandae totam
+                                ullam? Cum
+                                cupiditate
+                                dolorem eius eum tempore tenetur veritatis voluptate. Atque illo magnam necessitatibus
+                                nihil
+                                provident
+                                repudiandae.</p>
+                        </div>
+                    </xmp>
+                </div>
 
-    </section>
-    <!--遮盖背景图片-->
-    <section class="coverage1">
+                <h3></h3>
+                <div class="coverage">
+                    <div class=" block">
+                        <div class="overlay"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolorem dolorum eligendi,
+                            et
+                            exercitationem
+                            facilis hic incidunt ipsa magni maxime molestiae nisi officiis porro reiciendis similique,
+                            sit
+                            tempore vel
+                            voluptas.</p>
+                        <p>At, atque, cupiditate, enim harum iusto modi nobis possimus qui ratione recusandae totam
+                            ullam? Cum
+                            cupiditate
+                            dolorem eius eum tempore tenetur veritatis voluptate. Atque illo magnam necessitatibus nihil
+                            provident
+                            repudiandae.</p>
+                    </div>
+                </div>
 
-        <div class="row">
-            <div class="col block">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor dolorem
-                    ducimus earum
-                    eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod reiciendis rem
-                    repellat,
-                    sunt velit vero?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor dolorem
-                    ducimus earum
-                    eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod reiciendis rem
-                    repellat,
-                    sunt velit vero?</p>
-            </div>
+
+            </section>
+            <!--遮盖背景图片-->
+            <section class="post coverage1">
+
+                <div class="row">
+                    <div class="col-lg-12 block">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor dolorem
+                            ducimus earum
+                            eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod reiciendis rem
+                            repellat,
+                            sunt velit vero?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor dolorem
+                            ducimus earum
+                            eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod reiciendis rem
+                            repellat,
+                            sunt velit vero?</p>
+                    </div>
+                </div>
+            </section>
+            <!--scc写丝带{斜标}-->
+            <section class="post ribbon1">
+                <div class="row">
+                    <div class="col-lg-12 box">
+                        <span class="ribbon">+50%</span>
+                        <h4>Lorem ipsum dolor sit.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam officiis quam vel
+                            velit
+                            veritatis.</p>
+                    </div>
+                </div>
+
+            </section>
+            <!--消息徽章-->
+            <section class="post News_badges">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href=""></a>
+
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </section>
+            <!--分页 2017-10-27-->
+            <section class="post">
+                <h1 id="pagination">分页</h1>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 id="pagination-div">div布局结构</h2>
+                        <div class="highlight">
+                            <xmp>
+                                <ul class="pagination">
+                                    <li class="pagination__item disabled">
+                                        <a href="#" class="pagination__link">previous</a>
+                                    </li>
+                                    <li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                                    <li class="pagination__item"><a href="#" class="pagination__link">next</a></li>
+                                </ul>
+
+                            </xmp>
+
+
+                        </div>
+
+                        <h2 id="pagination-css">css样式</h2>
+                        <div class="highlight">
+                            <xmp>
+                                .pagination {
+                                display: flex;
+                                list-style: none;
+                                padding-left: 0;
+                                }
+
+                                .pagination__link {
+                                position: relative;
+                                padding: 0.5rem 0.75rem;
+                                border:1px solid rgba(0,0,0,0.1);
+                                margin-left: -1px;
+                                display: block;
+                                text-decoration: none;
+                                line-height: 1.2;
+                                }
+                                .pagination__link:hover{
+                                background-color: rgba(0,0,0,0.1);
+                                }
+
+                                .pagination__item:first-child .pagination__link{
+                                border-bottom-left-radius: .25rem;
+                                border-top-left-radius: .25rem;
+                                margin-left: 0;
+                                }
+                                .pagination__item:last-child .pagination__link{
+                                border-bottom-right-radius: .25rem;
+                                border-top-right-radius: .25rem;
+                                }
+
+                                .pagination__item.active .pagination__link{
+                                z-index: 1;
+                                color:#fff;
+                                background-color: rgba(0,0,255,0.7);
+                                border-color: rgba(0,0,255,0.7);;
+                                }
+
+                                .pagination__item.disabled .pagination__link{
+                                color:rgba(0,0,0,0.5);
+                                pointer-events: none;
+                                }
+
+                                /* modifier */
+                                .pagination--center{
+                                flex-direction: row;
+                                justify-content: center;
+                                }
+                                .pagination--right{
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                }
+                            </xmp>
+                        </div>
+                        <h2 id="pagination-example">分页实例</h2>
+
+                        <ul class="pagination">
+                            <li class="pagination__item disabled"><a href="#" class="pagination__link">previous</a>
+                            </li>
+                            <li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">next</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </section>
         </div>
-    </section>
-<!--scc写丝带{斜标}-->
-    <section class="ribbon1">
-    <div class="row">
-        <div class="col box">
-            <span class="ribbon">+50%</span>
-            <h4>Lorem ipsum dolor sit.</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam officiis quam vel velit veritatis.</p>
+        <div class="col-lg-3 col-md-3 scrollspy "><!--style="padding-left: 0;padding-right: 0;"-->
+            <ul id="nav" class="nav hidden-xs hidden-sm post " data-spy="affix">
+                <li>
+                    <a href="#xy-center">水平垂直居中</a>
+                    <ul class="nav">
+                        <li><a href="#center-usage">用法</a></li>
+                        <li><a href="#center-example">实例</a></li>
+                    </ul>
+                </li>
+                <li><a href="#coverage">遮盖层</a>
+                    <ul class="nav">
+                        <li><a href="#min-coverage">遮盖背景小图</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="#pagination">分页</a>
+                    <ul class="nav">
+                        <li><a href="#pagination-div">div布局结构</a></li>
+                        <li><a href="#pagination-css">css样式</a></li>
+                        <li><a href="#pagination-example">分页实例</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
         </div>
     </div>
 
-</section>
+
 </div>
+
+<footer>
+    <p class="text-center">This is a personage Front-end-effect-summary
+    </p>
+</footer>
 
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="https://cdn.bootcss.com/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
+<script>
+    $('#nav').affix({
+        offset: {
+            top: $('#nav').offset().top,
+            bottom: $('footer').outerHeight(true) + $('.application').outerHeight(true) + 40
+        }
+    });
+    //@ sourceURL=pen.js
+</script>
+
 </body>
 </html>

@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; // 1
+}
+
+body {
+  background: #EBEBEB;
+}
+
+
+.clearfix:after{
+  clear:both;
+  content: '';
+  display: block;
+}
+
+
+.post  h1, h2 {
+  padding-top: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+.highlight {
+  padding: 9px 14px;
+  margin-bottom: 14px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+}
+xmp{
+  overflow: auto;
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0px;
+}
