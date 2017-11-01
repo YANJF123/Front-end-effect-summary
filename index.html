@@ -113,8 +113,7 @@
                     </div>
                 </div>
             </section>
-            <!--遮盖背景小图-->
-
+            <!--遮盖层-->
             <section class="post">
                 <h1 id="coverage">遮罩层</h1>
                 <p> 前端页面偶尔使用到遮罩层，自己写了个最简的例子，</p>
@@ -144,7 +143,34 @@
                     </xmp>
                 </div>
 
-                <h3></h3>
+                <h3>css样式</h3>
+                <div class="highlight">
+                    <xmp>
+                        .block {
+                        background: url("../images/logo.png") no-repeat 5% 99%;
+                        /* background: no-repeat;
+                        background-position-x: 0;
+                        background-position-y: 50%;*/
+
+                        color: #ffffff;
+                        padding: 50px;
+                        font-size: 20px;
+                        z-index: 1;
+                        position: relative; //给父类定位
+                        }
+                        .overlay {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        background: dodgerblue;
+                        opacity: 0.9;
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        }
+                    </xmp>
+                </div>
+                <h3>遮盖小图实例</h3>
                 <div class="coverage">
                     <div class=" block">
                         <div class="overlay"></div>
@@ -163,13 +189,55 @@
                             repudiandae.</p>
                     </div>
                 </div>
+                <h2 id="min-coverage1">遮盖背景图片</h2>
+                <h3>div布局</h3>
+                <div class="highlight">
+                    <xmp>
+                        <div class="row">
+                            <div class="col-lg-12 block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor
+                                    dolorem
+                                    ducimus earum
+                                    eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod
+                                    reiciendis rem
+                                    repellat,
+                                    sunt velit vero?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor
+                                    dolorem
+                                    ducimus earum
+                                    eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod
+                                    reiciendis rem
+                                    repellat,
+                                    sunt velit vero?</p>
+                            </div>
+                        </div>
+                    </xmp>
+                </div>
+                <h3>css样式</h3>
+                <div class="highlight">
+                    <xmp>
+                        .block {
+                        background: url("../images/coveragel1.jpg") no-repeat;
+                        color: #ffffff;
+                        position: relative;
+                        z-index: 1;
 
-
-            </section>
-            <!--遮盖背景图片-->
-            <section class="post coverage1">
-
-                <div class="row">
+                        }
+                        .block:before {
+                        background: rgba(0, 0, 0, 0.5);
+                        //background: linear-gradient(to right,rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.62));
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        z-index: -1;
+                        content: "";
+                        }
+                    </xmp>
+                </div>
+                <h3>遮盖背景图片实例</h3>
+                <div class="row coverage1">
                     <div class="col-lg-12 block">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor dolorem
                             ducimus earum
@@ -181,32 +249,125 @@
                             eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod reiciendis rem
                             repellat,
                             sunt velit vero?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolor dolorem
+                            ducimus earum
+                            eius, excepturi fuga iusto maxime necessitatibus nulla officiis pariatur quod reiciendis rem
+                            repellat,
+                            sunt velit vero?</p>
                     </div>
                 </div>
             </section>
-            <!--scc写丝带{斜标}-->
-            <section class="post ribbon1">
-                <div class="row">
+
+            <!--scc丝带{斜标}-->
+            <section class="post ribbon-1">
+                <h1 id="ribbon">scc丝带(斜标)</h1>
+                <h3>简单丝带</h3>
+                <div class="row ">
                     <div class="col-lg-12 box">
-                        <span class="ribbon">+50%</span>
+                        <span class="ribbon-1">+50%</span>
                         <h4>Lorem ipsum dolor sit.</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam officiis quam vel
                             velit
                             veritatis.</p>
                     </div>
                 </div>
-
-            </section>
-            <!--消息徽章-->
-            <section class="post News_badges">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <a href=""></a>
-
+                <h3>个性丝带</h3>
+                <div class="row  ">
+                    <div class="col-lg-5 ribbon">
+                        <span class="ribbon1"><span>丝带效果1</span></span>
                     </div>
-                    <div class="col"></div>
+                    <div class="col-lg-5 ribbon">
+                        <span class="ribbon2">丝<br>带<br>效<br>果<br>2</span>
+                    </div>
+                    <div class="col-lg-5 ribbon">
+                        <span class="ribbon3">丝带效果3</span>
+                    </div>
+                    <div class="col-lg-5 ribbon">
+                        <span class="ribbon4">丝带效果4</span>
+                    </div>
+                    <div class="col-lg-5 ribbon">
+                        <span class="ribbon5">丝带效果5</span>
+                    </div>
+                    <div class="col-lg-5 ribbon">
+                        <div class="wrap"><span class="ribbon6">丝带效果6</span></div>
+                    </div>
                 </div>
             </section>
+
+            <!--消息徽章-->
+            <section class="post ">
+                <h1 id="News_badges">消息徽章</h1>
+                <h2 id="badges-div">div布局</h2>
+                <div class="highlight">
+                    <xmp>
+                        <div class=" News_badges">
+                            <a href="#" class="btn">
+                                View
+                                <span class="badge">12</span>
+                            </a>
+                            <a href="#" class="btn">
+                                View
+                                <span class="badge badge--right-top">12</span>
+                            </a>
+                        </div>
+                    </xmp>
+                </div>
+                <h2 id="badges-css">css样式</h2>
+                <div class="highlight">
+                    <xmp>
+                        .badge{
+                        display: inline-block;
+                        padding:0.25rem 0.4rem;
+                        font-size: 75%;
+                        line-height: 1;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: baseline;
+                        border-radius: 0.25rem;
+                        background-color: rgba(255,255,255,1);
+                        color:#000;
+                        font-weight: bold;
+                        }
+
+                        .btn{
+                        position: relative;
+                        padding: 0.5rem 0.75rem;
+                        text-decoration: none;
+                        background-color: rgba(0,155,255,1);
+                        border:1px solid rgba(0,155,255,1);
+                        color:#fff;
+                        border-radius: 0.25rem;
+                        margin:2rem;
+                        }
+
+                        .badge--right-top{
+                        position: absolute;
+                        padding:0.25rem;
+                        top:0;
+                        right:0;
+                        min-width: 1.25rem;
+                        min-height: 1.25rem;
+                        transform: translate(50%,-50%);
+                        border-radius: 50%;
+                        border:1px solid #fff;
+                        color:#fff;
+                        background-color: rgba(255,0,0,1);
+                        }
+                    </xmp>
+                </div>
+                <h2 id="badges-example">消息微章实例</h2>
+                <div class="row News_badges">
+                    <a href="#" class="btn">
+                        View
+                        <span class="badge">12</span>
+                    </a>
+                    <a href="#" class="btn">
+                        View
+                        <span class="badge badge--right-top">12</span>
+                    </a>
+                </div>
+            </section>
+
             <!--分页 2017-10-27-->
             <section class="post">
                 <h1 id="pagination">分页</h1>
@@ -313,11 +474,25 @@
                 </li>
                 <li><a href="#coverage">遮盖层</a>
                     <ul class="nav">
-                        <li><a href="#min-coverage">遮盖背景小图</a>
+                        <li>
+                            <a href="#min-coverage">遮盖背景小图</a>
+                        </li>
+                        <li>
+                            <a href="#min-coverage1">遮盖背景图片</a>
                         </li>
                     </ul>
                 </li>
-
+                <li>
+                    <a href="#ribbon">丝带（斜标）</a>
+                </li>
+                <li>
+                    <a href="#News_badges">消息微章</a>
+                    <ul class="nav">
+                        <li><a href="#badges-div">div布局</a></li>
+                        <li><a href="#badges-css">css样式</a></li>
+                        <li><a href="#badges-example">消息微章实例</a></li>
+                    </ul>
+                </li>
                 <li><a href="#pagination">分页</a>
                     <ul class="nav">
                         <li><a href="#pagination-div">div布局结构</a></li>
