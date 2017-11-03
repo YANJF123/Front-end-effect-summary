@@ -1,0 +1,10 @@
+.media {
+  font-size: 18px;
+  background: red;
+  color: #fff; }
+
+@media (min-width: 992px) {
+  p {
+    font-size: 2rem; } }
+
+/*# sourceMappingURL=_css-summary.css.mapp */
