@@ -462,6 +462,129 @@
 
 
             </section>
+            <section class="post">
+                <h1 id="breadcrumb">路径导航</h1>
+                <h2 id="breadcrumb-div">div布局结构</h2>
+                <div class="highlight">
+                    <xmp>
+                        <ul class="breadcrumbs ">
+                            <li class="breadcrumb-item"><a href="">Lorem</a></li>
+                            <li class="breadcrumb-item"><a href="">dolore</a></li>
+                            <li class="breadcrumb-item"><a href="">Cupiditate</a></li>
+                            <li class="breadcrumb-item active">Nisi</li>
+                        </ul>
+                    </xmp>
+                </div>
+                <h2 id="breadcrumb-css">css样式</h2>
+                <div class="highlight">
+                    <xmp>
+
+                        .breadcrumbs{
+                        display: flex; 弹性布局
+                        flex-wrap: nowrap;
+                        overflow: hidden;
+                        list-style: none;
+                        padding:0.5rem 0.75rem;
+                        margin:0 0 1rem 0;
+                        // border:1px solid rgba(0,0,0,0.1);
+                        background-color: rgba(0,0,0,0.2);
+
+                        }
+                        .breadcrumb-item >a{
+                        text-decoration: none;
+                        color:#000;
+                        }
+                        .breadcrumb-item >a:hover{
+                        text-decoration: underline;
+                        }
+                        .breadcrumb-item + .breadcrumb-item:before{ 伪类 个路径导航这间出现正斜杠
+                        content: '/';
+                        padding:0 0.5rem;
+                        display: inline-block;
+                        }
+                        .breadcrumb-item.active{
+                        color:rgba(0,0,0,0.5);
+                        }
+                    </xmp>
+                </div>
+                <h2 id="breadcrumb-example">路基导航实例</h2>
+                <ul class="breadcrumbs ">
+                    <li class="breadcrumb-item"><a href="">Lorem</a></li>
+                    <li class="breadcrumb-item"><a href="">dolore</a></li>
+                    <li class="breadcrumb-item"><a href="">Cupiditate</a></li>
+                    <li class="breadcrumb-item active">Nisi</li>
+                </ul>
+                <h3>路径导航居中</h3>
+                <p>应用类 <span style="color: red">.breadcrumbs--center</span>让路径导航居中</p>
+                <div class="highlight">
+                    <xmp>
+                        .breadcrumbs--center{
+                        flex-direction: row;
+                        justify-content: center;
+                        }
+
+
+                        <ul class="breadcrumbs breadcrumbs--center">
+                            <li class="breadcrumb-item"><a href="">Lorem</a></li>
+                            <li class="breadcrumb-item"><a href="">dolore</a></li>
+                            <li class="breadcrumb-item"><a href="">Cupiditate</a></li>
+                            <li class="breadcrumb-item active">Nisi</li>
+                        </ul>
+                    </xmp>
+                </div>
+                <ul class="breadcrumbs breadcrumbs--center">
+                    <li class="breadcrumb-item"><a href="">Lorem</a></li>
+                    <li class="breadcrumb-item"><a href="">dolore</a></li>
+                    <li class="breadcrumb-item"><a href="">Cupiditate</a></li>
+                    <li class="breadcrumb-item active">Nisi</li>
+                </ul>
+                <h3>路径导航居右</h3>
+                <p>应用类 <span style="color: red">.breadcrumbs--right</span>让路径导航居右</p>
+                <div class="highlight">
+                    <xmp>
+                        .breadcrumbs--right{
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        }
+
+                        <ul class="breadcrumbs breadcrumbs--right">
+                            <li class="breadcrumb-item"><a href="">Lorem</a></li>
+                            <li class="breadcrumb-item"><a href="">dolore</a></li>
+                            <li class="breadcrumb-item"><a href="">Cupiditate</a></li>
+                            <li class="breadcrumb-item active">Nisi</li>
+                        </ul>
+                    </xmp>
+                </div>
+                <ul class="breadcrumbs breadcrumbs--right">
+                    <li class="breadcrumb-item"><a href="">Lorem</a></li>
+                    <li class="breadcrumb-item"><a href="">dolore</a></li>
+                    <li class="breadcrumb-item"><a href="">Cupiditate</a></li>
+                    <li class="breadcrumb-item active">Nisi</li>
+                </ul>
+            </section>
+            <section class="post">
+                <h1 id="alert">提示条</h1>
+
+                <div class="alert alert-success" role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
+                </div>
+                <div class="alert alert-info" role="alert">
+                    This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                    like.
+                </div>
+
+            </section>
         </div>
         <div class="col-lg-3 col-md-3 scrollspy "><!--style="padding-left: 0;padding-right: 0;"-->
             <ul id="nav" class="nav hidden-xs hidden-sm post " data-spy="affix">
@@ -500,6 +623,14 @@
                         <li><a href="#pagination-example">分页实例</a></li>
                     </ul>
                 </li>
+                <li><a href="#breadcrumb">路径导航</a>
+                    <ul class="nav">
+                        <li><a href="#breadcrumb-div">div布局结构</a></li>
+                        <li><a href="#breadcrumb-css">css样式</a></li>
+                        <li><a href="#breadcrumb-example">路径导航实例</a></li>
+                    </ul>
+                </li>
+                <li><a href="#alert">提示条</a></li>
             </ul>
 
 

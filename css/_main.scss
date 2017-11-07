@@ -477,5 +477,85 @@
 
 }
 
+/*路街导航*/
+
+.breadcrumbs{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  list-style: none;
+  padding:0.5rem 0.75rem;
+  margin:0 0 1rem 0;
+  // border:1px solid rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.2);
+
+}
+.breadcrumb-item >a{
+  text-decoration: none;
+  color:#000;
+}
+.breadcrumb-item >a:hover{
+  text-decoration: underline;
+}
+.breadcrumb-item + .breadcrumb-item:before{
+  content: '/';
+  padding:0 0.5rem;
+  display: inline-block;
+}
+.breadcrumb-item.active{
+  color:rgba(0,0,0,0.5);
+}
+.breadcrumbs--center{
+  flex-direction: row;
+  justify-content: center;
+}
+.breadcrumbs--right{
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/*提示条*/
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+/*  .close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+  }*/
+}
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
 
 
