@@ -520,6 +520,35 @@ body {
   background-color: #d9edf7;
   border-color: #bce8f1; }
 
+.progress-v .progress {
+  display: flex;
+  height: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  overflow: hidden;
+  margin: 1rem 0; }
+.progress-v .progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 255, 0.7); }
+.progress-v .progress-bar--red {
+  background-color: rgba(255, 0, 0, 0.8); }
+.progress-v .progress-bar--striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent 100%);
+  background-size: 1rem 1rem;
+  background-repeat: repeat; }
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 1rem 0; } }
+.progress-v .progress-bar--animated {
+  animation: progress-bar-stripes 1s linear infinite; }
+
 html {
   box-sizing: border-box; }
 
