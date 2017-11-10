@@ -549,6 +549,41 @@ body {
 .progress-v .progress-bar--animated {
   animation: progress-bar-stripes 1s linear infinite; }
 
+.nav-v .nav {
+  display: flex;
+  list-style: none;
+  background-color: #fff;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding-left: 0;
+  font-size: 1.25rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 0.25em;
+  margin: 1rem 0; }
+.nav-v .nav-item {
+  padding: 1rem 0.75rem; }
+.nav-v .nav-item a {
+  text-decoration: none; }
+.nav-v .nav-item.active a {
+  background-color: purple;
+  color: #fff;
+  border-radius: 0.25rem; }
+.nav-v .nav-item.disabled a {
+  color: #999;
+  pointer-events: none; }
+.nav-v .nav--center {
+  flex-direction: row;
+  justify-content: center; }
+.nav-v .nav--right {
+  flex-direction: row;
+  justify-content: flex-end; }
+@media (max-width: 600px) and (orientation: portrait) {
+  .nav-v .nav {
+    flex-direction: column; } }
+
 html {
   box-sizing: border-box; }
 
