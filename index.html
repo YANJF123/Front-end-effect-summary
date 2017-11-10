@@ -592,28 +592,146 @@
             <!--进度条-->
             <section class="post progress-v">
                 <h1 id="progress">进度条</h1>
+                <h2>基本样式</h2>
+                <div class="highlight">
+                    <h3>div布局</h3>
+                    <xmp>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:25%">25%</div>
+                        </div>
+                    </xmp>
+                    <h3>css样式</h3>
+                    <xmp>
+                        .progress {
+                        display: flex;
+                        height: 1rem;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        border-radius: 0.25rem;
+                        font-size: 1rem;
+                        overflow: hidden;
+                        margin: 1rem 0;
+                        }
+
+                        .progress-bar {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.9em;
+                        color: rgba(255, 255, 255, 0.9);
+                        background-color: rgba(0, 0, 255, 0.7);
+                        }
+                    </xmp>
+                </div>
                 <div class="progress">
                     <div class="progress-bar" style="width:25%">25%</div>
                 </div>
 
 
-                <h4>with red color</h4>
+                <h2>定义颜色</h2>
+                <div class="highlight">
+                    <p>应用类 <span style="color: red">.progress-bar-red</span></p>
+                    <xpm>
+                        .progress-bar--red{
+                        background-color: rgba(255, 0, 0, 0.8);
+                        }
+                    </xpm>
+                    <h2>div结构应用</h2>
+
+                    <xmp>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar--red" style="width:35%">35%</div>
+                        </div>
+                    </xmp>
+
+
+                </div>
                 <div class="progress">
                     <div class="progress-bar progress-bar--red" style="width:35%">35%</div>
                 </div>
 
 
-                <h4>stripped</h4>
+                <h2>条纹滚动条</h2>
+                <div class="highlight">
+                    <xpm>
+                        .progress-bar--striped {
+                        background-image: linear-gradient(45deg,
+                        rgba(255,255,255,0.4) 25%,
+                        transparent 25%,
+                        transparent 50%,
+                        rgba(255,255,255,0.4) 50%,
+                        rgba(255,255,255,0.4) 75%,
+                        transparent 75%,
+                        transparent 100%
+                        );
+                        background-size: 1rem 1rem;
+                        background-repeat: repeat;
+                        }
+                    </xpm>
+                </div>
                 <div class="progress">
                     <div class="progress-bar progress-bar--striped" style="width:45%"></div>
                 </div>
 
-                <h4>stripped with animation</h4>
+                <h2>会动的条纹滚动条</h2>
+                <div class="highlight">
+                    <h3>条纹的滚动时间方向</h3>
+                    <xmp>
+                        @keyframes progress-bar-stripes {
+                        from {
+                        background-position: 0 0;
+                        }
+                        to {
+                        background-position: 1rem 0;
+                        }
+                        }
+
+
+                    </xmp>
+                    <h3>动画</h3>
+                    <xmp>
+                        .progress-bar--animated {
+                        animation: progress-bar-stripes 1s linear infinite;
+                        }
+                    </xmp>
+                    <h2>div 布局引用</h2>
+                    <xmp>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar--striped progress-bar--animated"
+                                 style="width:55%"></div>
+                        </div>
+                    </xmp>
+                </div>
                 <div class="progress">
                     <div class="progress-bar progress-bar--striped progress-bar--animated" style="width:55%"></div>
                 </div>
 
-                <h4>with different size</h4>
+                <h4>定义宽度</h4>
+                <div class="highlight">
+                    <xmp>
+                        <div class="progress" style="height:0.2rem;">
+                            <div class="progress-bar" style="width:25%"></div>
+                        </div>
+                    </xmp>
+                    <hr>
+                    <xmp>
+                        <div class="progress" style="height:0.75rem;">
+                            <div class="progress-bar" style="width:35%"></div>
+                        </div>
+                    </xmp>
+                    <hr>
+                    <xmp>
+                        <div class="progress" style="height:1rem;">
+                            <div class="progress-bar" style="width:45%"></div>
+                        </div>
+                    </xmp>
+                    <hr>
+                    <xmp>
+                        <div class="progress" style="height:1.75rem;">
+                            <div class="progress-bar" style="width:55%"></div>
+                        </div>
+                    </xmp>
+
+                </div>
                 <div class="progress" style="height:0.2rem;">
                     <div class="progress-bar" style="width:25%"></div>
                 </div>
