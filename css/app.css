@@ -600,10 +600,17 @@ body {
   content: '';
   display: block; }
 
-.post h1, h2 {
+.post > h1, h2 {
   padding-top: 20px;
   padding-bottom: 9px;
   border-bottom: 1px solid #eee; }
+
+.post > p {
+  line-height: 32px;
+  font-size: 16px; }
+
+.post > ul li, ol li {
+  padding: 10px 0; }
 
 .highlight {
   padding: 9px 14px;
