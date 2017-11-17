@@ -93,10 +93,42 @@
                 <p><span style="color: red">JavaScript</span>可以直接嵌套在网页的任何地方，
                     通常放在 <span><%/body%>上面</span>
                 </p>
+
                 <ol>
                     <li>标签包裹<code>&lt;script&gt;...&lt;/script&gt;</code>包裹</li>
                     <li>引入<code> &lt;script src="/static/js/abc.js"&gt;&lt;/script&gt;</code></li>
                 </ol>
+                <h3>基本语法</h3>
+                <p>每个语句以;结束，语句块用{...}。JavaScript并不强制要求在每个语句
+                    的结尾加;，浏览器中负责执行JavaScript代码的引擎会自动在每个语句的结尾补上;。</p>
+                <div class="highlight">
+                    <xmp>
+                        var x = 1;//赋值语句
+                    </xmp>
+                    <h3>组语句</h3>
+                    <xmp>
+                        if (2 > 1) {
+                        x = 1;
+                        y = 2;
+                        z = 3;
+                        }
+                    </xmp>
+                    <h3>嵌套，形成层级结构：</h3>
+                    <xmp>
+                        if (2 > 1) {
+                        x = 1;
+                        y = 2;
+                        z = 3;
+                        if (x < y) {
+                        z = 4;
+                        }
+                        if (x > y) {
+                        z = 5;
+                        }
+                        }
+                    </xmp>
+
+                </div>
             </section>
         </div>
 
